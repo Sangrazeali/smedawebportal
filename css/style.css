@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header_top {
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.28);
+}
+
+.owl_ind {
+    z-index: 0 !important;
+}
+
+.header_top_ul ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+.header_top_ul ul li a {
+    color: white;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+
+.border_right {
+    border-right: 1px solid white;
+}
+
+.header_second p {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.nav_elem {
+    margin-left: 25px;
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 13px;
+}
+
+.nav-item a:hover {
+    border-bottom: 3px solid #4db885;
+    z-index: 1;
+}
+
+.login-register {
+    color: white;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.loginul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header_main {
+    position: fixed;
+    top: 36px;
+    left: 0;
+    z-index: 1;
+}
+
+#carouselid {
+    height: 200px;
+}
+
+.carousel-elems {
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    background-image: linear-gradient(to right, #000428, #004e92, #2DA09D);
+    width: 100%;
+    height: 100vh;
+    opacity: 0.4;
+
+}
+
+.carousel-elems h1 {
+    color: #fff8f8;
+    position: absolute;
+    top: 200px;
+    left: 105px;
+    /* text-shadow: 0 0 black; */
+    text-shadow: 2px 2px #404040;
+    font-size: 39px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+.carousel-control-prev {
+    visibility: hidden;
+}
+
+.carousel-control-next {
+    visibility: hidden;
+}
+
+.active1 {
+    background-color: white;
+    top: 0;
+    transition: 0.7s;
+    box-shadow: 0px 15px 10px -15px #d8d2d2;
+}
+
+.active2 {
+    color: grey !important;
+}
+
+.left {
+    width: 100%;
+    height: 1px;
+    background-color: #25A891;
+    margin-left: 90px;
+    margin-top: 12%;
+
+}
+
+.right {
+    width: 100%;
+    height: 1px;
+    background-color: #25A891;
+    margin-top: 12%;
+    margin-left: -90px;
+}
+
+.left_1 {
+    width: 100%;
+    height: 1px;
+    background-color: #25A891;
+    margin-left: 220px;
+    margin-top: 12%;
+
+}
+
+.right_1 {
+    width: 100%;
+    height: 1px;
+    background-color: #25A891;
+    margin-top: 12%;
+    margin-left: -220px;
+}
+
+.left_2 {
+    width: 100%;
+    height: 1px;
+    background-color: #23527c;
+    margin-left: 260px;
+    margin-top: 12%;
+
+}
+
+.right_2 {
+    width: 100%;
+    height: 1px;
+    background-color: #23527c;
+    margin-top: 12%;
+    margin-left: -260px;
+}
+
+.portal {
+    padding: 0 15px;
+    background: #F2F3F7;
+    padding-top: 50px;
+}
+
+.portal h2 {
+    font-weight: 400;
+    color: #25A891;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.portal-p {
+    color: grey;
+    text-transform: none;
+    text-align: left;
+}
+
+.portal-back-img {
+    border-left: 7px solid #25A891;
+    background-image: url('../images/nip-right-back-img.png');
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.portal-content {
+    background-color: white;
+}
+
+.kpi-section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portal-back-img p {
+    font-size: 1.92857rem;
+    color: white;
+}
+
+.portal-back-img p span {
+    font-size: 1rem;
+    color: white;
+    margin-top: -10px;
+}
+
+.ribbon2 {
+    width: 20px;
+    padding: 10px 0;
+    position: absolute;
+    top: -26px;
+    left: 25px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    background: #00B784;
+    color: white;
+}
+
+.ribbon2:before {
+    height: 0;
+    width: 0;
+    right: -5.5px;
+    top: 0.1px;
+    border-bottom: 6px solid #00B784;
+    border-right: 6px solid transparent;
+}
+
+.ribbon2:before,
+.ribbon2:after {
+    content: "";
+    position: absolute;
+}
+
+.ribbon2:after {
+    height: 0;
+    width: 0;
+    bottom: -7.5px;
+    left: 0;
+    border-left: 10px solid #00B784;
+    border-right: 10px solid #00B784;
+    border-bottom: 10px solid transparent;
+}
+
+.marker i {
+    color: #219FF6;
+    font-size: 23px;
+    margin-left: 86%;
+    margin-top: -17px;
+}
+
+.card {
+    border: none !important;
+    border-radius: 15px;
+}
+
+.card-body a {
+    color: grey;
+    font-size: 15px;
+}
+
+.card-title {
+    font-size: 1rem;
+    color: #474747;
+    font-weight: 600;
+
+}
+
+.text-muted span {
+    color: #219FF6;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.li-items li {
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 6px;
+    color: grey;
+    font-size: 1rem;
+}
+
+.first_li {
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(31, 31, 31) !important;
+}
+
+.card-body button {
+    border-color: #219FF6;
+    color: #219FF6;
+    border-radius: 50px;
+    padding: 4px 24px;
+    margin-left: 32%;
+    font-size: 14px;
+}
+
+.card-body button:hover {
+    border-color: #219FF6;
+    background-color: #219FF6;
+    color: #ffffff;
+    box-shadow: 1px 9px 19px -5px rgb(0 0 0 / 30%);
+    transition: all ease 0.5s;
+    transform: translateY(-2px);
+}
+
+.card:hover {
+    box-shadow: 0 3px 15px rgb(0 0 0 / 26%);
+    transform: translateY(-20px);
+    transition: all ease 0.8s;
+}
+
+.opportunity_button button {
+    padding: 8px 29px;
+    font-size: 13px;
+    border: 2px solid #219FF6;
+    color: #219FF6;
+    border-radius: 40px;
+    position: absolute;
+    top: 0px;
+    left: 43%;
+}
+
+.opportunity_button button:hover {
+    box-shadow: 1px 9px 19px -5px rgb(0 0 0 / 30%);
+    transition: all ease 1s;
+    transform: translateY(-2px);
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    background-image: linear-gradient(to left, #219FF6, rgba(57, 38, 224, 0.979));
+    border: none;
+    color: white;
+}
+
+.opportunity_button ::after {
+    padding: 8px 29px;
+    font-size: 13px;
+    border: 2px solid #219FF6;
+    color: #219FF6;
+    border-radius: 40px;
+}
+
+.opportunity_button :focus {
+    box-shadow: 1px 9px 19px -5px rgb(0 0 0 / 30%);
+    transition: all ease 0.5s;
+    transform: translateY(-2px);
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    background-image: linear-gradient(to left, #219FF6, rgba(57, 38, 224, 0.979));
+    color: white;
+}
+
+.opportunity_button :active {
+    box-shadow: 1px 9px 19px -5px rgb(0 0 0 / 30%);
+    transition: all ease 0.5s;
+    transform: translateY(-2px);
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    background-image: linear-gradient(to left, #219FF6, rgba(57, 38, 224, 0.979));
+    border: none;
+    color: white;
+}
+
+.blog .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators i {
+    margin-top: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 20px;
+    color: #00B784;
+}
+
+.blog .carousel-indicators .active {
+    color: #05664b;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #07926b;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #07926b;
+}
+
+::-webkit-scrollbar-corner {
+    height: 3px;
+}
+
+.success_card {
+    width: 293px;
+    height: 390px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #f3eeee;
+}
+
+.success_card:hover {
+    transform: translateY(-6px);
+    transition: 0.7s;
+}
+
+.success_body:hover {
+    width: 270px;
+    height: 380px;
+    overflow: scroll;
+    color: white;
+}
+
+.success_card h4 {
+    color: #00B784;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .9px;
+    margin-bottom: 0.5rem;
+}
+
+.success_card h6 {
+    color: #9DADBE;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .1px;
+    margin-bottom: 1rem
+}
+
+.success_card p {
+    color: #415464;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.text_support {
+    font-weight: 400;
+    color: #23527c;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gateway {
+    background: #F2F3F7;
+}
+
+.gateway p {
+    color: #707070;
+    font-size: 1.1rem;
+    line-height: 1.65;
+    margin-bottom: 0px;
+}
+
+.contact {
+    background-image: linear-gradient(to right, #0D9E98, #4DB885);
+}
+
+.contact p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.contact span {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.contact a {
+    color: white;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.gatewayimg img {
+    position: absolute;
+    top: -50px;
+    left: 60px;
+}
+
+.contact button {
+    border-radius: 30px;
+    border-color: white;
+    color: white;
+    padding: 4px 20px;
+    margin-left: 67px;
+}
+
+.contact button:hover {
+    border-color: white;
+    background-color: white;
+    color: #00B784;
+    box-shadow: 1px 9px 19px -5px rgb(0 0 0 / 30%);
+    transition: all ease 0.5s;
+    transform: translateY(-2px);
+}
+.footer {
+    width: 100px;
+    background: #095169;
+}
+.items p{
+    color: white;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+.items a{
+    color: white;
+    margin-bottom: 0.2rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.items a :hover{
+    color:white
+}
+.items ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.items i{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.items span{
+    color: white;
+    margin-bottom: 0.2rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
