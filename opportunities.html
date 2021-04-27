@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Web-Portal</title>
+</head>
+
+<body>
+    <!-- iconbar -->
+
+    <!-- Head -->
+    <div class="container-fluid header_top" style="background-color: #415464;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-8">
+                    <div class="row ">
+                        <div class="header_top_ul">
+                            <ul class="mt-1">
+                                <li><a href="" class="border_right">SMEDA KP</a></li>
+                                <li><a href="" class="border_right">KP-BOIT</a></li>
+                                <li><a href="">Other Relevant Dept</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-4 header_second">
+                    <p class="text-right mt-2">Hotline +92-91-512342</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu -->
+    <div class="container-fluid header_main bg-white" style="box-shadow: 0px 15px 10px -15px #d3d3d3;" id="main_header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link nav_elem1" href="#" style="border-bottom: 3px solid #4db885;">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="#">opportunities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="#">reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="#">about-kp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="#">guideme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="#">other</a>
+                        </li>
+                    </ul>
+                    <ul class="row loginul mt-3">
+                        <li><a class="login-register" href=""
+                                style="border-right: 1px solid rgb(253, 248, 248);">Login</a></li>
+                        <li><a class="login-register" href="">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- searchbar/dropdown menu -->
+
+    <div class="container-fluid p-5" style="margin-top: 120px; background-color: #F2F3F7;">
+        <div class="row pl-5">
+            <div class="dept col-md-5 ml-5">
+                <div class="dropdown dept">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                        Departments
+                    </button>
+                    <div class="dropdown-menu" style="width: 100%;">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dept col-md-5 ml-5">
+                <div class="dropdown dept">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                        Opportunity
+                    </button>
+                    <div class="dropdown-menu" style="width: 100%;transition: 1s;">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- grid cards -->
+        
+        <div class="row mt-5">
+            <div class="col-sm-3 animated fadeInRight mt-5" style="animation-delay: 0.5s;">
+                <div class="card update-card">
+                    <div class="card-block">
+                        <div class="row align-items-end">
+                            <div class="col-12">
+                                <h4 class="text-white mt-3 ml-4">Transport</h4>
+                                <h6 class="text-white m-b-0 mt-3 ml-4">200 Opportunities</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <canvas id="update-chart-2" height="50"></canvas>
+                            </div>
+                            <div class="col-12">
+                                <!-- <h4 class="text-white">Transport</h4> -->
+                                <h6 class="text-white m-b-0 mt-5 ml-3">Worth RS 100 Millons
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-right mt-5">
+                        <button class="btn text-white">Explor Dept.<i class="icofont icofont-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 1s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 1.5s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 2s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+            <div class="col-sm-3 animated fadeInRight mt-5" style="animation-delay: 2.5s;">
+                <div class="card update-card">
+                    <div class="card-block">
+                        <div class="row align-items-end">
+                            <div class="col-12">
+                                <h4 class="text-white mt-3 ml-4">Transport</h4>
+                                <h6 class="text-white m-b-0 mt-3 ml-4">200 Opportunities</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <canvas id="update-chart-2" height="50"></canvas>
+                            </div>
+                            <div class="col-12">
+                                <!-- <h4 class="text-white">Transport</h4> -->
+                                <h6 class="text-white m-b-0 mt-5 ml-3">Worth RS 100 Millons
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-right mt-5">
+                        <button class="btn text-white">Explor Dept.<i class="icofont icofont-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 3s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 3.5s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 4s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+            <div class="col-sm-3 animated fadeInRight mt-5" style="animation-delay: 4.5s;">
+                <div class="card update-card">
+                    <div class="card-block">
+                        <div class="row align-items-end">
+                            <div class="col-12">
+                                <h4 class="text-white mt-3 ml-4">Transport</h4>
+                                <h6 class="text-white m-b-0 mt-3 ml-4">200 Opportunities</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <canvas id="update-chart-2" height="50"></canvas>
+                            </div>
+                            <div class="col-12">
+                                <!-- <h4 class="text-white">Transport</h4> -->
+                                <h6 class="text-white m-b-0 mt-5 ml-3">Worth RS 100 Millons
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-right mt-5">
+                        <button class="btn text-white">Explor Dept.<i class="icofont icofont-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 6s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 6.5s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 7s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+            <div class="col-sm-3 animated fadeInRight mt-5" style="animation-delay: 7.5s;">
+                <div class="card update-card">
+                    <div class="card-block">
+                        <div class="row align-items-end">
+                            <div class="col-12">
+                                <h4 class="text-white mt-3 ml-4">Transport</h4>
+                                <h6 class="text-white m-b-0 mt-3 ml-4">200 Opportunities</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <canvas id="update-chart-2" height="50"></canvas>
+                            </div>
+                            <div class="col-12">
+                                <!-- <h4 class="text-white">Transport</h4> -->
+                                <h6 class="text-white m-b-0 mt-5 ml-3">Worth RS 100 Millons
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-right mt-5">
+                        <button class="btn text-white">Explor Dept.<i class="icofont icofont-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 8s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 8.5s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 animated fadeInRight  mt-5" style="animation-delay: 2s;">
+                <div class="card aa_first" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="ribbon col-md-6">
+                                <span class="ribbon2">N</span>
+                            </div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
+                        </div>
+                        <a href="">project ID:2934</a>
+                        <h5 class="card-title mt-2">KP Swat Motorway Express</h5>
+                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>Rs</span> <span class="ml-2">10</span><span
+                                class="ml-2" style="font-weight: 100;">M</span></h6>
+
+                        <ul class="mt-4 li-items row">
+                            <li class="first_li ml-3">State(s)</li>
+                            <li>| offshore</li>
+                        </ul>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Sub-sector</li>
+                            <li>| Sub-sector</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4">
+                            <button type="button" class="btn btn-outline-warning mt-5">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5">Interested</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <div style="width:100%;height:200px"></div>
+    <footer>
+        <div class="container-fluid footer">
+            <div class="container pt-4">
+                <div class="row items">
+                    <div class="col-md-2">
+                        <p>opportunities</p>
+                        <ul>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Analytics</p>
+                        <ul>
+                            <li><a href="">lorem</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Resources</p>
+                        <ul>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p>External Site Links</p>
+                        <ul>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Contact Us</p>
+                        <span>INVEST Pk
+                            Helpline (PK) 92xxxx
+                            contact@smeda.com
+                            First Floor, lorem lorem,
+                            peshawar,
+                            xxxxxxxx
+                            www.smeda.org</span>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Follow Us</p>
+                        <div class="row">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""> <i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    </div>
+    <script src="./js/webportal.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>
