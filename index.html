@@ -25,7 +25,113 @@
 </head>
 
 <body>
-    <!-- iconbar -->
+    <!-- Modal -->
+
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./images//bulb.jpg" width="100%" height="680" alt="">
+                    </div>
+                    <div class="col-md-6 p-4" style="height: 680;">
+                        <div class="col-md-12 focalperson">
+                            <form>
+                                <div class="row pl-3 login_signup">
+                                    <p id="loginid">Login |</p>
+                                    <p class="ml-1" id="registerid"> Register</p>
+                                </div>
+                                <div>
+                                    <div id="register">
+                                        <label for="">Username</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Password</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <label for="">Name</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Desgination</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <label for="">Email Address</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <label for="">Phone</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div id="login" style="display: none;">
+                                        <label for="">Username</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Password</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check"><label class="form-check-label"><input
+                                                class="form-check-input" type="checkbox">I agree to the license
+                                            terms.</label></div>
+                                </div>
+                                <div class="form-group mybutton"><button class="btn btn-block"
+                                        type="button" id="register_btn">Register</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
 
     <!-- Head -->
     <div class="container-fluid header_top">
@@ -53,6 +159,7 @@
     <div class="container-fluid header_main" id="main_header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="./images//government-of-pak PNG.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -71,7 +178,7 @@
                             <a class="nav-link nav_elem" href="#">reports</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav_elem" href="#">about-kp</a>
+                            <a class="nav-link nav_elem" href="about.html">about-kp</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav_elem" href="#">guideme</a>
@@ -99,7 +206,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="carousel-elems" style=" background:url('./images/1.jpg')">
+                <div class="carousel-elems" style=" background:url('./images/Slider1.jpg')">
                     <div class="overlay d-flex justify-content-center align-items-center">
                     </div>
                     <h1 class="animated bounceInRight" style="animation-delay: 1s;">Corporate social responsilbility
@@ -114,7 +221,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="carousel-elems" style=" background:url('./images/3.jpg')">
+                <div class="carousel-elems" style=" background:url('./images/slider2.jpg')">
                     <div class="overlay d-flex justify-content-center align-items-center">
                     </div>
                     <h1 class="animated fadeInRight" style="animation-delay: 1s;">STRESSED ASSETS</h1>
@@ -189,7 +296,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
+        <div class="row mt-5">
             <div class="col-sm-3 aa animated" style="animation-delay: 1s;">
                 <div class="card aa_first" style="width: 18rem;">
                     <div class="card-body">
@@ -205,14 +312,23 @@
                                 class="ml-2">16.31</span><span class="ml-2" style="font-weight: 100;">mn</span></h6>
 
                         <ul class="mt-4 li-items row">
-                            <li class="first_li ml-3">State(s)</li>
-                            <li>| offshore</li>
+                            <li class="first_li ml-3">Department</li>
+                            <li>| FBR</li>
                         </ul>
                         <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Sub-sector</li>
+                            <li class="first_li ml-3">Sector</li>
                             <li>| Ports</li>
                         </ul>
-                        <button type="button" class="btn btn-outline-warning mt-5">View</button>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Location</li>
+                            <li>| Peshawar</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4 pt-3">
+                            <button type="button" class="btn btn-outline-warning mt-5"
+                                onclick=" detail()">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5" data-toggle="modal"
+                                data-target=".bd-example-modal-xl">Interested</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,14 +347,23 @@
                                 class="ml-2">16.31</span><span class="ml-2" style="font-weight: 100;">mn</span></h6>
 
                         <ul class="mt-4 li-items row">
-                            <li class="first_li ml-3">State(s)</li>
-                            <li>| offshore</li>
+                            <li class="first_li ml-3">Department</li>
+                            <li>| FBR</li>
                         </ul>
                         <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Sub-sector</li>
+                            <li class="first_li ml-3">Sector</li>
                             <li>| Ports</li>
                         </ul>
-                        <button type="button" class="btn btn-outline-warning mt-5">View</button>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Location</li>
+                            <li>| Peshawar</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4 pt-3">
+                            <button type="button" class="btn btn-outline-warning mt-5"
+                                onclick=" detail()">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5" data-toggle="modal"
+                                data-target=".bd-example-modal-xl">Interested</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -249,7 +374,7 @@
                             <div class="ribbon col-md-6">
                                 <span class="ribbon2">M</span>
                             </div>
-                            <div class="col-md-6 marker"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt"></i></div>
                         </div>
                         <a href="">project ID:2934</a>
                         <h5 class="card-title mt-2">Development of Oil Jetty No. 10 under PPP mode</h5>
@@ -257,14 +382,24 @@
                                 class="ml-2">16.31</span><span class="ml-2" style="font-weight: 100;">mn</span></h6>
 
                         <ul class="mt-4 li-items row">
-                            <li class="first_li ml-3">State(s)</li>
-                            <li>| offshore</li>
+                            <li class="first_li ml-3">Department</li>
+                            <li>| FBR</li>
                         </ul>
                         <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Sub-sector</li>
+                            <li class="first_li ml-3">Sector</li>
                             <li>| Ports</li>
                         </ul>
-                        <button type="button" class="btn btn-outline-warning mt-5">View</button>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Location</li>
+                            <li>| Peshawar</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4 pt-3">
+                            <button type="button" class="btn btn-outline-warning mt-5">
+
+                                Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5" data-toggle="modal"
+                                data-target=".bd-example-modal-xl">Interested</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -283,14 +418,23 @@
                                 class="ml-2">16.31</span><span class="ml-2" style="font-weight: 100;">mn</span></h6>
 
                         <ul class="mt-4 li-items row">
-                            <li class="first_li ml-3">State(s)</li>
-                            <li>| offshore</li>
+                            <li class="first_li ml-3">Department</li>
+                            <li>| FBR</li>
                         </ul>
                         <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Sub-sector</li>
+                            <li class="first_li ml-3">Sector</li>
                             <li>| Ports</li>
                         </ul>
-                        <button type="button" class="btn btn-outline-warning mt-5">View</button>
+                        <ul class=" li-items row" style="margin-top: -18px;">
+                            <li class="first_li ml-3">Location</li>
+                            <li>| Peshawar</li>
+                        </ul>
+                        <div class="row buttonsrow pl-4 pt-3">
+                            <button type="button" class="btn btn-outline-warning mt-5"
+                                onclick=" detail()">Detail</button>
+                            <button type="button" class="btn btn-outline-warning mt-5" data-toggle="modal"
+                                data-target=".bd-example-modal-xl">Interested</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -675,14 +819,24 @@
                 <div class="col-md-4 ml-4 col-sm-3 col-xs-3">
                     <div class="supporter_logo twitterFeed">
                         <div class="tweet_head">
-                          <p class="pl-3"><i class="fab fa-twitter fa-2x mt-2"></i>  <span style="color: grey;margin-left: 5px;font-weight: 600;" class="mt-2">Live Tweets</span> </p>
+                            <p class="pl-3"><i class="fab fa-twitter fa-2x mt-2"></i> <span
+                                    style="color: grey;margin-left: 5px;font-weight: 600;" class="mt-2">Live
+                                    Tweets</span> </p>
                         </div>
                         <div class="tweets mt-2">
                             <div class="col-md-11 tweets_section m-auto">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quaerat tempore, beatae quibusdam ipsa maxime fuga dolore explicabo quia optio officiis alias a laudantium ratione eum, labore atque animi sed. <br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio quibusdam numquam earum exercitationem cum error, voluptatem eius inventore laborum quod? Recusandae, saepe quia. In quod tenetur nisi velit iste. <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolor quaerat, at tempora, ea numquam magnam labore illo expedita consequatur commodi rerum ullam cum cupiditate odit eligendi. Iusto, error! Reprehenderit. <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit tenetur iusto voluptatibus quasi facere dolorum ipsam id dolor nam, est saepe explicabo veritatis quis quidem adipisci magni cum delectus. <br></p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quaerat tempore,
+                                    beatae quibusdam ipsa maxime fuga dolore explicabo quia optio officiis alias a
+                                    laudantium ratione eum, labore atque animi sed. <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio quibusdam
+                                    numquam earum exercitationem cum error, voluptatem eius inventore laborum quod?
+                                    Recusandae, saepe quia. In quod tenetur nisi velit iste. <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolor quaerat, at
+                                    tempora, ea numquam magnam labore illo expedita consequatur commodi rerum ullam cum
+                                    cupiditate odit eligendi. Iusto, error! Reprehenderit. <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit tenetur
+                                    iusto voluptatibus quasi facere dolorum ipsam id dolor nam, est saepe explicabo
+                                    veritatis quis quidem adipisci magni cum delectus. <br></p>
                             </div>
                         </div>
                         <div class="foot">
@@ -700,14 +854,24 @@
                 <div class="col-md-4 ml-4 col-sm-3 col-xs-3">
                     <div class="supporter_logo twitterFeed">
                         <div class="tweet_head">
-                          <p class="pl-3"><i class="fab fa-facebook fa-2x mt-2"></i>  <span style="color: grey;margin-left: 5px;font-weight: 600;" class="mt-2">Live Posts</span> </p>
+                            <p class="pl-3"><i class="fab fa-facebook fa-2x mt-2"></i> <span
+                                    style="color: grey;margin-left: 5px;font-weight: 600;" class="mt-2">Live
+                                    Posts</span> </p>
                         </div>
                         <div class="tweets mt-2">
                             <div class="col-md-11 tweets_section m-auto">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quaerat tempore, beatae quibusdam ipsa maxime fuga dolore explicabo quia optio officiis alias a laudantium ratione eum, labore atque animi sed. <br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio quibusdam numquam earum exercitationem cum error, voluptatem eius inventore laborum quod? Recusandae, saepe quia. In quod tenetur nisi velit iste. <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolor quaerat, at tempora, ea numquam magnam labore illo expedita consequatur commodi rerum ullam cum cupiditate odit eligendi. Iusto, error! Reprehenderit. <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit tenetur iusto voluptatibus quasi facere dolorum ipsam id dolor nam, est saepe explicabo veritatis quis quidem adipisci magni cum delectus. <br></p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quaerat tempore,
+                                    beatae quibusdam ipsa maxime fuga dolore explicabo quia optio officiis alias a
+                                    laudantium ratione eum, labore atque animi sed. <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio quibusdam
+                                    numquam earum exercitationem cum error, voluptatem eius inventore laborum quod?
+                                    Recusandae, saepe quia. In quod tenetur nisi velit iste. <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolor quaerat, at
+                                    tempora, ea numquam magnam labore illo expedita consequatur commodi rerum ullam cum
+                                    cupiditate odit eligendi. Iusto, error! Reprehenderit. <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit tenetur
+                                    iusto voluptatibus quasi facere dolorum ipsam id dolor nam, est saepe explicabo
+                                    veritatis quis quidem adipisci magni cum delectus. <br></p>
                             </div>
                         </div>
                         <div class="foot">
@@ -720,9 +884,9 @@
 
     </div>
     <!-- contact -->
-    <div class="container-fluid contact p-4">
-        <div class=" container">
-            <div class="row pt-4">
+    <div class="container-fluid contact p-4 bacla">
+        <div class="container">
+            <div class="row">
                 <div class="col-md-2">
                     <p>Lorem ipsum dolor. Repudiandae</p>
                     <p>Lorem ipsum dolor. Repudiandae</p>
@@ -730,7 +894,7 @@
                 </div>
                 <div class="col-md-6 mb-5 gatewayimg"><img src="./images/KPK.png" alt=""
                         style="margin-left: -30px; width: 95%;"></div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <p class="ml-2"><i class="fa fa-phone "></i> Lorem ipsum dolor. Repudiandae</p>
                     <p class="ml-2"><i class="fa fa-envelope"></i> <a href="">contact@aaxxxxx.com</a></p>
                     <button class="btn btn-outline-primary ml-2">Send Query</button>
@@ -813,9 +977,14 @@
 
         </div>
     </footer>
-  </div>
+    </div>
     <script src="./js/webportal.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+        function detail() {
+            window.location.href = "detail.html";
+        }
+    </script>
 </body>
 
 </html>
